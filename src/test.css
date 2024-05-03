@@ -1,66 +1,46 @@
-angular.module('app', []);
-
-angular.module('app').controller("MainController", function(){
-    var vm = this;
-  
-    vm.searchInput = '';
-    vm.shows = [
-        {
-            title: 'Life of Pi',
-            author: 'Davan',
-            year: 2024
-        },
-        {
-             title: 'Học code today',
-            author: 'Fpt',
-            year: 2022
-        },
-        {
-             title: 'Learn Angular by example',
-            author: 'Fpt-Aptech',
-            year: 2023
-        },
-        {
-             title: 'Họ nhà trai',
-            author: 'Nguyễn Anh Tú',
-            year: 2021
-        },
-        {
-             title: 'Đôi mắt có lửa',
-            author: 'Nguyễn Hùng Sơn',
-            year: 2020
-        }
-    ];
-    vm.orders = [
-        {
-            id: 1,
-            title: 'Author Ascending',
-            key: 'author',
-            reverse: false
-        },
-        {
-            id: 2,
-            title: 'Author Descending',
-            key: 'author',
-            reverse: true
-        },
-        {
-            id: 3,
-            title: 'Title Ascending',
-            key: 'title',
-            reverse: false
-        },
-        {
-            id: 4,
-            title: 'Title Ascending',
-            key: 'title',
-            reverse: true
-        }
-    ];
-    vm.order = vm.orders[0];
-    vm.new = {};
-    vm.addShow = function() {
-        vm.shows.push(vm.new);
-        vm.new = {};
-    };
-});
+* {
+  margin: auto;
+  position: relative;
+  align-items: center; 
+  padding: 0 0;
+ }
+ label {
+   display: block;
+   margin: 0 5%;
+ }
+ h1 {
+   display: block;
+   margin: 10px 43%;
+   position: relative;
+ }
+ input {
+   width: 90%;
+   border-radius: 5px;
+   height: 35px;
+   margin: 5px 5%;
+ }
+ .button-up {
+   height: 30px;
+   width: 60px;
+   border-radius: 5px;
+   background-color: rgb(0, 193, 48);
+   left: 92%;
+ }
+ 
+ table, th, td {
+   border: 1px solid;
+ }
+ table {
+   width: 90%;
+   border-collapse: collapse;
+   border-radius: 5px;
+ }
+ th {
+   height: 30px;
+ }
+ td {
+   text-align: center;
+ }
+ .button-down{
+   padding: 10px 20px ;
+ }
